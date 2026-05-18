@@ -44,7 +44,7 @@ If you uninstall the app, this data is deleted with the app. Because it is not s
 
 ### 4.1 AI price suggestions (only when you tap "Get Price")
 
-When you ask the app for a price suggestion, the app sends the following to our pricing service (a Cloudflare Worker we operate):
+When you ask the app for a price suggestion, the app sends the following to our pricing service:
 
 - A **downsized JPEG** of the photo you took or picked (resized client-side to a max edge of 512 pixels, quality 70, EXIF stripped — so location/camera metadata embedded by your phone is removed before upload)
 - The **short text description** you typed for the item
@@ -53,7 +53,7 @@ When you ask the app for a price suggestion, the app sends the following to our 
 
 Our pricing service:
 
-1. Hashes the photo and description and looks up a cached price (Cloudflare KV cache, 30-day TTL). If found, it returns the cached price without calling the AI model.
+1. Hashes the photo and description and looks up a cached price (30-day TTL). If found, it returns the cached price without calling the AI model.
 2. If not cached, forwards the request to Anthropic's API to generate a price (Claude Haiku 4.5 by default). Anthropic processes the request under their own terms; per Anthropic's published policy at the time of writing, API inputs and outputs are not used to train their models.
 3. Stores the resulting price in the cache and returns it to your phone.
 4. Increments a monthly counter on the anonymous device ID (`usage:<device_id>:<YYYY-MM>`) so we can enforce the monthly free-tier limit.
