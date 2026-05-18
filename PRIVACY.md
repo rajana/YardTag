@@ -1,7 +1,7 @@
 # YardTag Privacy Policy
 
 **Effective:** 2026-05-17
-**Last updated:** 2026-05-17
+**Last updated:** 2026-05-18
 
 YardTag is a mobile app for running a garage, yard, moving, or community sale. It is designed to be **local-first**: your sale data lives on your phone, not on our servers. This policy explains exactly what data the app handles, what leaves your device, and why.
 
@@ -18,7 +18,7 @@ YardTag is published by Rajana Devassykutty. References to "we," "us," or "the a
 ## 2. The short version
 
 - All your items, photos, sales, and checklists are stored **on your phone** in a local database and the app's private file storage.
-- We do **not** have user accounts. We do not collect your name, email, address, or phone number.
+- We do **not** have user accounts. We do not collect your email or phone number. The app lets you optionally enter your name and address in Settings so they can be printed on Pro price tags — these values are stored **only on your device** and are never transmitted to YardTag's servers or any third party.
 - The only thing that leaves your phone for our service is what you send to get an AI price suggestion: a downsized photo and the short description you typed, along with an anonymous device ID for rate limiting.
 - The app uses Apple/Google in-app purchase for the optional one-time Pro unlock. The purchase itself is handled by Apple/Google; we receive a purchase receipt, not your payment details.
 - We use PostHog for anonymous product analytics and Sentry for crash reports. Neither receives photos, item descriptions, names, or other personal info.
@@ -34,6 +34,7 @@ The following data is stored **locally only** and is never uploaded to our serve
 - Photos you take or pick (stored as JPEG files in the app's private storage)
 - Your checklist
 - App settings (currency, AI-on/off, onboarding state)
+- Your **seller name and address** (optional, entered in Settings) — used only to render your Pro price tags before printing. These values are stored on your device and are never transmitted to YardTag's servers or any third party.
 - Your Pro entitlement status
 
 If you uninstall the app, this data is deleted with the app. Because it is not synced to a cloud account, **we cannot recover it for you** if your phone is lost or wiped.
@@ -42,7 +43,7 @@ If you uninstall the app, this data is deleted with the app. Because it is not s
 
 ## 4. What leaves your phone, and why
 
-### 4.1 AI price suggestions (only when you tap "Get Price")
+### 4.1 AI price suggestions (only when you tap "Suggest Price with AI")
 
 When you ask the app for a price suggestion, the app sends the following to our pricing service:
 
