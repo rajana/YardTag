@@ -13,10 +13,10 @@ When you write in, please include:
 
 ## Quick start
 
-1. **Open the app** and tap through the 3 onboarding screens.
-2. On Home, tap **+ Snap to Price** to add your first item. Take a photo, type a short description (e.g. "blue ceramic lamp, 80s, works"), then tap **Get Price**. The AI returns three tiers — pick one or enter your own price.
+1. **Open the app** and swipe through the onboarding slides. Set your sale start and end dates on Home — this unlocks the rest of the actions.
+2. Tap **+ Snap to Price** to add your first item. Take a photo, type a short description (e.g. "blue ceramic lamp, 80s, works"), then tap **Suggest Price with AI**. The AI returns three tiers — pick one or enter your own price. You can also skip AI entirely by typing a price in the manual field below.
 3. Repeat until your sale is loaded.
-4. Go to **Tags**, select your items, and **Print** to AirPrint or save the PDF.
+4. (**Pro**) Go to **Print price tags**, select your items, and print to AirPrint or save the PDF. Tag printing is a Pro feature — tap the button on Home to upgrade.
 5. On sale day, tap an item and **Mark Sold** as buyers pay.
 6. End of day, open **Sale Summary** to see totals and (Pro) export a CSV or PDF report.
 
@@ -32,8 +32,8 @@ You take a photo and type a short description. The app sends a downsized photo p
 **Q: Why is the suggested price off?**
 The AI is a starting point, not the final word. It is conservative because garage-sale buyers expect deep discounts. Adjust freely — type a custom price on the same screen.
 
-**Q: I got "Daily limit reached" / a rate-limit message.**
-The free tier allows 100 AI price calls per device per month. The counter resets on the 1st of each month. Pro does **not** raise this limit (Pro unlocks export, multi-sale, and branded tags — see Pro section below).
+**Q: I got a "You've used your free price calls for this month" message.**
+The free tier allows 100 AI price calls per device per month. The counter resets on the 1st of each month. Pro does **not** raise this limit (Pro unlocks tag printing, Bulk Snap, more than 1 sale per year, export, and a payment QR on tags — see Pro section below). When you hit the cap, you can keep adding items by typing prices manually in the AddItem screen.
 
 **Q: The price call failed — what does each error mean?**
 - **Network** — Your phone could not reach our service. Check wifi/cellular and try again.
@@ -58,16 +58,19 @@ Quantity is total units; sold quantity is how many you've already sold. Remainin
 **Q: How do I start a new sale?**
 Open the Sales screen (from Home). Tap the **+** to create a new sale. Each item belongs to exactly one sale.
 
-**Q: Can I have more than one sale at the same time?**
-Only with Pro. Free allows one active sale at a time; Pro lets you keep multiple sales open in parallel (e.g. your sale and helping a friend with theirs).
+**Q: Can I run more than one sale per year?**
+Only with Pro. Free allows 1 sale per calendar year; Pro lets you create as many sales as you need each year (e.g. a spring sale and a fall sale, or helping a friend with theirs).
 
 ### Tags & printing
+
+**Q: Why is the "Print price tags" button locked?**
+Tag printing is a Pro-only feature. Tap the button and you'll be taken to the upgrade screen. After upgrading, the full Tags flow is available.
 
 **Q: What paper does the Tags PDF print on?**
 The tag layout targets **Avery 5160** US Letter labels (30 per sheet, 1" × 2-5/8"). Load a sheet in any inkjet/laser printer that supports US Letter and AirPrint.
 
-**Q: There's a "Made with YardTag" footer on my tags. Can I remove it?**
-Yes — purchase Pro. The footer is replaced by your custom branding (seller name, address, payment handle, etc.) you set up in Settings.
+**Q: Where does the QR code go on the printed sheet?**
+If you've set up a payment service (Venmo, Cash App, PayPal, or a custom URL) in Settings, one dedicated "Scan to pay" tag is printed at the start of the sheet — the rest are item price tags, so the QR doesn't repeat on every label.
 
 **Q: Can I print just some items?**
 Yes. On the Tags screen, deselect any items you don't want included before tapping Print.
@@ -75,9 +78,11 @@ Yes. On the Tags screen, deselect any items you don't want included before tappi
 ### Pro unlock
 
 **Q: What does Pro include?**
+- **Print Avery 5160 price tags** (the entire Tags flow is Pro-only)
+- **Bulk Snap** — rapid photo-after-photo pricing for loading many items quickly
 - **CSV and PDF export** of your sale summary
-- **Multi-sale tracking** (more than one active sale at a time)
-- **Custom tag branding** (your name, address, payment handle, optional QR), which also removes the "Made with YardTag" footer
+- **More than 1 sale per year** (free is capped at 1 sale per calendar year)
+- **Payment QR on tags** (a scannable Venmo / Cash App / PayPal / URL QR code printed once per sheet)
 
 **Q: What does Pro cost?**
 $4.99, one-time, lifetime. No subscription, no renewal. The unlock is tied to your Apple ID / Google account and restores on a new device or after reinstall.
