@@ -1,7 +1,7 @@
 # YardTag Privacy Policy
 
 **Effective:** 2026-05-17
-**Last updated:** 2026-05-18
+**Last updated:** 2026-05-22
 
 YardTag is a mobile app for running a garage, yard, moving, or community sale. It is designed to be **local-first**: your sale data lives on your phone, not on our servers. This policy explains exactly what data the app handles, what leaves your device, and why.
 
@@ -57,7 +57,7 @@ Our pricing service:
 1. Hashes the photo and description and looks up a cached price (30-day TTL). If found, it returns the cached price without calling the AI model.
 2. If not cached, forwards the request to Anthropic's API to generate a price (Claude Haiku 4.5 by default). Anthropic processes the request under their own terms; per Anthropic's published policy at the time of writing, API inputs and outputs are not used to train their models.
 3. Stores the resulting price in the cache and returns it to your phone.
-4. Increments a monthly counter on the anonymous device ID (`usage:<device_id>:<YYYY-MM>`) so we can enforce the monthly free-tier limit.
+4. Increments a monthly counter on the anonymous device ID (`usage:<device_id>:<YYYY-MM>`) so we can enforce the monthly free-tier limit (currently 100 AI price suggestions per device per calendar month; this limit may change over time).
 
 We do **not** associate price requests with your identity. We do not log photos or descriptions long-term beyond the cache described above.
 
@@ -165,7 +165,7 @@ If you are in a jurisdiction with applicable data-protection laws (e.g. GDPR, UK
 
 - **On-device data:** kept until you delete an item, end a sale, or uninstall the app.
 - **AI pricing cache (Cloudflare KV):** 30 days from last write.
-- **Rate-limit counters (Cloudflare KV):** ~35 days, keyed by month.
+- **Rate-limit counters (Cloudflare Durable Object storage):** reset each calendar month.
 - **PostHog analytics:** retained per PostHog's default retention for our plan.
 - **Sentry crash reports:** retained per Sentry's default retention for our plan (typically 30–90 days).
 - **RevenueCat receipts:** retained for the life of the Pro entitlement so the unlock can be restored.
